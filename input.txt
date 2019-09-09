@@ -1,0 +1,33 @@
+void add(int a, float b)
+{
+	int sum;
+	sum= 0;
+	while(sum <= 50000 || a<6)
+	{
+		sum = sum - 10.43 * 34E4 ;
+		if (sum == 4000)
+			break;
+	}
+}
+void main ()
+{
+	int sum;
+	sum= 0;
+	while(sum == 23E5)
+	{
+		sum = sum + 10.43 + 34E4 + 45.34E-4 + E43 + 34;
+	}
+}
+void identifier ( )
+{ 
+
+ int identifier ;
+ 
+ identifier = identifier - 3E4 ; 
+
+while ( identifier < a )
+{
+    identifier = identifier * 123.5 ; 
+
+}
+}

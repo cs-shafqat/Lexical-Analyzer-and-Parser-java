@@ -1,0 +1,29 @@
+	identifier	int	float	void	return	break	continue	if	while	else	num	relOp	addOp	mulOp	not	and	or	=	(	)	{	}	;	,	$
+Program		1	1	1																					
+VarDeclList	epsilon	2	2	2	epsilon	epsilon	epsilon	epsilon	epsilon		epsilon		epsilon		epsilon						epsilon		epsilon		
+VarDeclListTail		3	3	3																					
+VarDeclListTail`	epsilon	4	4	4	epsilon	epsilon	epsilon	epsilon	epsilon												epsilon		epsilon		
+VarDecl		5	5	5																					
+VarList	6																								
+VarList`																							epsilon	7	
+FunDeclList		8	8	8																					
+FunDeclList`		9	9	9																					epsilon
+FunDecl		10	10	10																					
+ParamDeclList		11	11	11																epsilon					
+ParamDeclListTail		12	12	12																					
+ParamDeclListTail`																				epsilon				13	
+ParamDecl		14	14	14																					
+Block																					15				
+Type		16a	16b	16c																					
+StmtList	17				17	17	17	17	17		17		17		17						17		17		
+StmtList`	18				18	18	18	18	18		18		18		18						18	epsilon	18		
+Stmt	19b				19c	19d	19e	19f	19g		19b		19b		19b						19h		19a		
+Stmt`					epsilon	epsilon	epsilon	epsilon	epsilon	20											epsilon	epsilon	epsilon		
+Expr 	21a										21c		21b		21b										
+Expr `												22	22	22		22	22			epsilon			epsilon	epsilon	
+Primary												23c	23c	23c		23c	23c	23b	23a	epsilon						
+ExprList	24												24		24				24	Epsilon					
+ExprListTail	25												25		25				25	Epsilon					
+ExprListTail`																				Epsilon				26	
+UnaryOp													27a		27b										
+BinOp												28c	28a	28b		28d	28e								

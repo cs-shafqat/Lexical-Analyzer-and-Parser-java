@@ -1,0 +1,33 @@
+void identifier ( int identifier , float identifier ) 
+{ 
+int identifier ; 
+identifier = num ; 
+while ( identifier relOp num or identifier relOp num ) 
+{ 
+identifier = identifier addOp num mulOp num ; 
+if ( identifier relOp num ) 
+break ; 
+} 
+} 
+void identifier ( ) 
+{ 
+int identifier ; 
+identifier = num ; 
+while ( identifier relOp num ) 
+{ 
+identifier = identifier addOp num addOp num addOp num addOp identifier addOp num ; 
+} 
+} 
+void identifier ( ) 
+{ 
+
+int identifier ; 
+
+identifier = identifier addOp num ; 
+
+while ( identifier relOp identifier ) 
+{ 
+identifier = identifier mulOp num ; 
+
+} 
+} 

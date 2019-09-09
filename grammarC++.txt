@@ -1,0 +1,74 @@
+1.	Program --> FunDeclList
+
+2.	VarDeclList --> VarDeclListTail     |  epsilon
+
+3.	VarDeclListTail --> VarDecl VarDeclListTail`
+
+4.	VarDeclListTail` --> VarDeclListTail |  epsilon
+
+5.	VarDecl  --> Type VarList  ;
+
+6.	VarList -->  identifier  VarList` 
+
+7.	VarList` --> ,  VarList | epsilon
+
+8.	FunDeclList --> FunDecl  FunDeclList`
+
+9.	FunDeclList` --> FunDeclList  |  epsilon
+
+10.	FunDecl --> Type identifier (  ParamDeclList  )  Block
+
+11.	ParamDeclList --> ParamDeclListTail  |  epsilon
+
+12.	ParamDeclListTail -->  ParamDecl  ParamDeclListTail`
+
+13.	ParamDeclListTail` -->   ,  ParamDeclListTail |  epsilon
+
+14.	ParamDecl --> Type  identifier 
+
+15.	Block -->  {  VarDeclList  StmtList  }
+
+16a.	Type --> int 
+16b. Type --> float 
+16c. Type --> void
+
+17.	StmtList  --> Stmt  StmtList`
+
+18.	StmtList` --> StmtList  |  epsilon
+
+19a. Stmt --> ; 
+19b. Stmt -->  Expr  ; 
+19c. Stmt -->   return  Expr  ; 
+19d. Stmt -->  break  ; 
+19e. Stmt --> continue  ; 
+19f. Stmt --> if   (   Expr   )   Stmt   Stmt`  
+19g. Stmt --> while  (   Expr  )  Stmt  
+19h. Stmt -->  Block
+
+20.	Stmt` --> else  Stmt |  epsilon
+
+21a.	Expr --> identifier  Primary 
+21b. Expr --> UnaryOp  Expr  Expr`  
+21c. Expr --> num  Expr`
+
+22.	Expr` --> BinOp  Expr  Expr` |  epsilon 
+
+23a.	Primary --> (  ExprList  )  Expr`  
+23b.  Primary --> =  Expr  Expr` 
+23c.  Primary --> Expr`
+23d.  Primary --> epsilon
+
+24.	ExprList --> ExprListTail  |  epsilon
+
+25.	ExprListTail --> Expr  ExprListTail` 
+
+26.	ExprListTail` -->  ,  ExprListTail  |  epsilon
+
+27a.	UnaryOp --> addOp  
+27b. UnaryOp --> not
+
+28a.	BinOp --> addOp 
+28b. BinOp --> mulOp 
+28c. BinOp --> relOp 
+28d. BinOp --> and 
+28e. BinOp --> or 
